@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IntroEnterprise.Models
 {
-    abstract class Person
+    abstract public class Person
     {
 
         private string lastname;
