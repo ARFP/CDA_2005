@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroEnterprise", "IntroEnt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroEnterprise.Tests", "IntroEnterprise.Tests\IntroEnterprise.Tests.csproj", "{932B628E-8E8B-45C1-9E96-15A6BDD2E1AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroEnterprise.Ntests", "IntroEnterprise.Ntests\IntroEnterprise.Ntests.csproj", "{150695CF-2E8F-4A35-91AC-825F3EB52318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroEnterprise.Ntests", "IntroEnterprise.Ntests\IntroEnterprise.Ntests.csproj", "{150695CF-2E8F-4A35-91AC-825F3EB52318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroEnterprise.XTests", "IntroEnterprise.XTests\IntroEnterprise.XTests.csproj", "{6550A09D-73D0-4CF3-B585-AF322EC38A94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{150695CF-2E8F-4A35-91AC-825F3EB52318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{150695CF-2E8F-4A35-91AC-825F3EB52318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{150695CF-2E8F-4A35-91AC-825F3EB52318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6550A09D-73D0-4CF3-B585-AF322EC38A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6550A09D-73D0-4CF3-B585-AF322EC38A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6550A09D-73D0-4CF3-B585-AF322EC38A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6550A09D-73D0-4CF3-B585-AF322EC38A94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

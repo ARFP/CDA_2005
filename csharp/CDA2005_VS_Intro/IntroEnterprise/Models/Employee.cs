@@ -22,7 +22,7 @@ namespace IntroEnterprise.Models
         /// <returns></returns>
         public override string GetInfo()
         {
-            throw new NotImplementedException();
+            return lastname + " " + firstname;
         }
 
         public int GetMonthlySalary()
