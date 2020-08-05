@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IntroEnterprise.Models
 {
-    class Employee : Person 
+    public class Employee : Person, ISalary, IStockage
     {
         /// <summary>
         /// 
@@ -22,7 +22,17 @@ namespace IntroEnterprise.Models
         /// <returns></returns>
         public override string GetInfo()
         {
-            throw new NotImplementedException();
+            return lastname + " " + firstname;
+        }
+
+        public int GetMonthlySalary()
+        {
+            return 0;
+        }
+
+        public bool Save()
+        {
+            return false;
         }
 
         /// <summary>
@@ -33,5 +43,8 @@ namespace IntroEnterprise.Models
         {
             return "idclient " + base.ToString();
         }
+
+
+
     }
 }

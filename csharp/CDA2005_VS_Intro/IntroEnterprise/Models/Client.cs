@@ -6,7 +6,7 @@ using System.Transactions;
 
 namespace IntroEnterprise.Models
 {
-    class Client : Person
+    public class Client : Person
     {
         private int idClient;
 

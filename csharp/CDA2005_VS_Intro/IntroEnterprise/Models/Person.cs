@@ -4,12 +4,12 @@ using System.Text;
 
 namespace IntroEnterprise.Models
 {
-    abstract class Person
+    abstract public class Person
     {
 
-        private string lastname;
+        protected string lastname;
 
-        private string firstname;
+        protected string firstname;
 
         abstract public string GetInfo();
 
