@@ -48,7 +48,26 @@ Afin de pouvoir accéder à votre logiciel à distance, votre choix s'est porté
 ![MCD](TP_Freelancer_MLD.png)
 
 
+
+## Maquette HTML
+
+Les différentes vues HTML5 de la future application sont construites à partir de l'exemple suivant qui représente la vue de la liste des clients enregistrés.
+
+Vous devez penser aux futures formulaires, comment les voyez-vous ? Proposez votre propre style ;)
+
+Réfléchissez également aux éléments que vous souhaiterez afficher sur la future page d'accueil de votre application et comment les mettre en forme.
+
+![MCD](TP_Freelancer_Template.png)
+
+Le logo est accessible [ici](TP_Freelancer_Logo.jpg). 
+
+> Pour l'affichage des icônes, une bibliothèque CSS : font-awesome est utilisée. Recherchez la version 4.7 (obligatoirement) sur le site officiel et consultez la documentation pour y intégrer les icônes de votre choix (en plus de celles présentes sur la maquette).
+
+
+
+
 ## Compétences mises en œuvre
+
 - HTML
 - CSS
 - Javascript
