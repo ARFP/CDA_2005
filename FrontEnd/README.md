@@ -45,4 +45,4 @@ La structure de votre projet doit alors ressembler à ceci :
     - index.html
 
 
-Lorsque tout est prêt, vous pouvez démarrer la [1ère partie](01_HTML_Structure.md)
+Lorsque tout est prêt, vous pouvez démarrer la [1ère partie](01_HTML_structure.md)
