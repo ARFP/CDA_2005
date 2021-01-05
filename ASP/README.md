@@ -1,6 +1,6 @@
 # CDA_2005
 
-## Cours, Démos et Exercices Web FrontEnd & ASP.NET
+## Cours, Démos et Exercices ASP.NET
 
 - HTML
 - CSS
