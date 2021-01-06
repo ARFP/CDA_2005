@@ -59,7 +59,9 @@ Réfléchissez également aux éléments que vous souhaiterez afficher sur la fu
 
 ![MCD](TP_Freelancer_Template.png)
 
+
 Le logo est accessible [ici](TP_Freelancer_logo.jpg). 
+
 
 > Pour l'affichage des icônes, une bibliothèque CSS : font-awesome est utilisée. Recherchez la version 4.7 (obligatoirement) sur le site officiel et consultez la documentation pour y intégrer les icônes de votre choix (en plus de celles présentes sur la maquette).
 

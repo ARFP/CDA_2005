@@ -1,0 +1,57 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a {
+    
+}
+
+
+
+a:active  {
+    color: violet;
+}
+
+.nav {
+    position:relative;
+}
+
+.menu   {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    transition: all ease .6s;
+    position:absolute;
+    top: 60px;
+    left: -100%;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu a  {
+    color: red;
+    text-decoration: none;
+    background-color: #11111122;
+    display: block;
+    transition: all ease 600ms;
+}
+
+a:hover  {
+    color: green;
+    background-color: #66000033;
+}
+
+main  {
+    border: 1px solid red;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 100px;
+}
