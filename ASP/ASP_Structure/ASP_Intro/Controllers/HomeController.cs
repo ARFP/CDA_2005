@@ -25,6 +25,7 @@ namespace ASP_Intro.Controllers
             // Les données stockées dans ViewData sont directement accessibles dans la vue
             ViewData["OtherMessage"] = "Notre site est cool !";
 
+
             return View("AboutCompany");
         }
     }
