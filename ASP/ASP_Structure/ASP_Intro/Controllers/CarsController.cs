@@ -4,29 +4,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ASP_Intro.Models;
+using ASP_Intro.Data;
 
 namespace ASP_Intro.Controllers
 {
     public class CarsController : Controller
     {
+        // Contexte de base de données
+        CarsContext ctx;
+
+        public CarsController(CarsContext ctx)
+        {
+            this.ctx = ctx;
+        }
+
+
         public IActionResult Index()
         {
-            Car car = new Car
+            /* Car car = new Car
             { 
-                VoitureId = 1,
                 Marque = "Renault", 
                 Modele = "Clio"
             };
 
-            ViewBag.car = car;
+             ctx.Cars.Add(car);
 
-            return View("CarsIndex");
+            ctx.SaveChanges();
+           
+
+            ViewBag.car = car; 
+            */
+            // récupération des voitures enregistrées en base de données
+            IEnumerable<Car> cars = ctx.Cars.ToList();
+
+            // injection de la liste des voitures dans la vue CarsList
+            return View("CarsList", cars);
         }
 
-        public IActionResult Test()
+        public IActionResult Create()
         {
 
             return View();
         }
+
+
     }
 }

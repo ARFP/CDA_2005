@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASP_Intro.Models
 {
@@ -21,6 +22,9 @@ namespace ASP_Intro.Models
         [Required]
         [MaxLength(30)]
         public string Modele { get; set; }
+
+        //[Required]
+        //public Engine engine;
 
 
         [NotMapped]

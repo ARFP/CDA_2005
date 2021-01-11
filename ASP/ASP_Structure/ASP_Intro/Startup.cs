@@ -1,10 +1,14 @@
+using ASP_Intro.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,12 +16,24 @@ namespace ASP_Intro
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             // Ajoute le support des controlleurs et du moteur de Vues Razor
             services.AddControllersWithViews();
+
+            // référence le contexte de base de données CarsContext
+            services.AddDbContext<CarsContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("DbCarsConnectionString"))
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,6 +43,9 @@ namespace ASP_Intro
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+
+            app.UseHttpsRedirection();
 
             app.UseDefaultFiles(); // active la gestion des extensions standard
             app.UseStaticFiles(); // active la gestion des fichiers statiques stockés dans le répertoire "wwwroot"
