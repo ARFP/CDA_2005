@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP_Intro", "ASP_Intro\ASP_Intro.csproj", "{8537D25A-692C-4456-B2C5-72724DBBDAC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleEntity", "ConsoleEntity\ConsoleEntity.csproj", "{6DE9DBCF-B3E0-43DD-8577-BAE2270910F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8537D25A-692C-4456-B2C5-72724DBBDAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8537D25A-692C-4456-B2C5-72724DBBDAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8537D25A-692C-4456-B2C5-72724DBBDAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE9DBCF-B3E0-43DD-8577-BAE2270910F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE9DBCF-B3E0-43DD-8577-BAE2270910F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE9DBCF-B3E0-43DD-8577-BAE2270910F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE9DBCF-B3E0-43DD-8577-BAE2270910F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
