@@ -21,30 +21,33 @@ namespace ASP_Intro.Controllers
 
         public IActionResult Index()
         {
-            /* Car car = new Car
-            { 
-                Marque = "Renault", 
-                Modele = "Clio"
-            };
-
-             ctx.Cars.Add(car);
-
-            ctx.SaveChanges();
-           
-
-            ViewBag.car = car; 
-            */
             // récupération des voitures enregistrées en base de données
-            IEnumerable<Car> cars = ctx.Cars.ToList();
+            IEnumerable<Car> cars = ctx.Cars.ToList(); 
 
             // injection de la liste des voitures dans la vue CarsList
             return View("CarsList", cars);
         }
 
+
         public IActionResult Create()
         {
 
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Car car)
+        {
+            if(ModelState.IsValid)
+            {
+                ctx.Cars.Add(car);
+
+                ctx.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+
+            return View(car);
         }
 
 

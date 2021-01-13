@@ -12,6 +12,8 @@ namespace ASP_Intro.Data
         // un DbSet représente une table en base de données
         public DbSet<Car> Cars { get; set; }
 
+        public DbSet<Engine> Engines { get; set; }
+
         // public DbSet<Engine> Engines { get; set; }
 
 

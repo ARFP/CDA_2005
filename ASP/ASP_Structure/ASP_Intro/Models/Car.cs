@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 
 namespace ASP_Intro.Models
 {
@@ -17,10 +18,11 @@ namespace ASP_Intro.Models
 
         [Required]
         [StringLength(40)]
+        [Display(Name="Marque de la voiture")]
         public string Marque { get; set; }
 
-        [Required]
-        [MaxLength(30)]
+        [Required(ErrorMessage = "Le modèle est obligatoire")]
+        [MaxLength(30, ErrorMessage = "Le modèle est trop long !")]
         public string Modele { get; set; }
 
         //[Required]
