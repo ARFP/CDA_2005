@@ -114,7 +114,7 @@ Si vous préférez qu'Entity Framework utilise les Annotations dans les modèles
 ### Définir le nom de la classe DbContext
 
 Par défaut, le nom de la classe de contexte de base de données (DbContext) correspond au nom de la base de donnée utilisée suivi de "Context".
-Si vous souhaitez définir le nom de la classe du contexte de base de données, ajouter l'rrgument "-Context" suivi du nom désiré : 
+Si vous souhaitez définir le nom de la classe du contexte de base de données, ajouter l'argument "-Context" suivi du nom désiré : 
 
 > PM> Scaffold-DbContext Name="DbBooks" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context "MyDatabaseContext" 
 
