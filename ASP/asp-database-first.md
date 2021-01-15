@@ -53,7 +53,7 @@ Cette base de données sera installée sur un serveur SQLServer local sous le no
 La chaîne de connexion suivante sera utilisée pour accéder à la base de données :
 
 ```
-Server=(localdb)\mssqllocaldb;Database=DbUsers;Trusted_Connection=True;MultipleActiveResultSets=true
+Server=(localdb)\mssqllocaldb;Database=DbBooks;Trusted_Connection=True;MultipleActiveResultSets=true
 ```
 
 ## Créer le projet
