@@ -123,4 +123,4 @@ Si vous souhaitez définir le nom de la classe du contexte de base de données, 
 
 Vous pouvez bien entendu combiner tous ces arguments : 
 
-> PM> Scaffold-DbContext Name="DbBooks" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models-Context "MyDatabaseContext" -DataAnnotations -f
+> PM> Scaffold-DbContext Name="DbBooks" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context "MyDatabaseContext" -DataAnnotations -f
