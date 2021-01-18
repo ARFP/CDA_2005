@@ -8,10 +8,8 @@ body {
 }
 
 a {
-    
+    color: red;
 }
-
-
 
 a:active  {
     color: violet;
@@ -21,11 +19,14 @@ a:active  {
     position:relative;
 }
 
-.menu   {
+.menu, .menu ul  {
     list-style: none;
     margin:0;
     padding: 0;
     transition: all ease .6s;
+}
+
+.menu   {
     position:absolute;
     top: 60px;
     left: -100%;
@@ -55,3 +56,64 @@ main  {
     margin: auto;
     padding: 100px;
 }
+
+
+@media print {
+    a {
+        display:none;
+    }
+}
+
+@media all and (min-width: 640px) {
+
+    header {
+        background-color: #CCCCCC;
+        height: 60px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .nav {
+      
+    }
+
+    .menu {
+        position: relative;
+        top:0;
+        left:0;
+        display: flex;
+    }
+
+    .menu a {
+        padding: 1em 1em;
+        white-space: nowrap;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu li {
+        position:relative;
+    }
+
+    .menu li:hover > ul  {
+        position:absolute;
+        display:block;
+        left:0;
+        top:100%;
+    }
+
+} 
